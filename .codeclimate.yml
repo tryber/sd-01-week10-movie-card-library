@@ -31,15 +31,25 @@ checks:
     config:
       threshold: # language-specific defaults. an override will affect all languages.
 exclude_patterns:
-- "zoo.test.js"
-- "data.js"
+- "src/App.test.js"
+- "src/serviceWorker.js"
+- "src/index.css"
 plugins:
   csslint:
     enabled: true
-  editorconfig:
-    enabled: true
+    checks:
+      box-sizing:
+        enabled: false
+      fallback-colors:
+        enabled: false
+      box-model:
+          enabled: false
   eslint:
     enabled: true
+    config:
+      extensions:
+        - .js
+        - .jsx
   fixme:
     enabled: true
   nodesecurity:
