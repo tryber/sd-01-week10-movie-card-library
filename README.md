@@ -173,7 +173,15 @@ O componente `App` deve renderizar um componente `MovieList`, passando como prop
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-01-week10-movie-cards-library`
 
-2. Crie uma branch a partir da branch `master`
+2. Instale as dependências, incialize o projeto e rode os tetes
+  * Instale as dependências:
+    * `npm install`
+  * Inicialize o projeto:
+    * `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
+  * Verifique que os testes estão executando:
+    * `npm test` (os testes devem rodar e falhar)
+
+3. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
     * Exemplo: `git branch`
   * Se não estiver, mude para a branch `master`
@@ -182,16 +190,16 @@ O componente `App` deve renderizar um componente `MovieList`, passando como prop
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
     * Exemplo: `git checkout -b joaozinho-movie-cards-library`
 
-3. Crie a pasta `components` dentro da pasta `src` e um arquivo `Header.jsx` dentro dessa pasta:
+4. Crie a pasta `components` dentro da pasta `src` e um arquivo `Header.jsx` dentro dessa pasta:
   * Verifique que você está na raiz do projeto
     * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-01-week10-movie-cards-library**_
   * Crie a pasta `components` e o arquivo `Header.jsx`
     * Exemplo:
       * `mkdir src/components`
       * `touch src/components/Header.jsx`
-      * `echo "// Iniciando o projeto" > src/components/Header.jsx`
+      * `echo "// Iniciando o projeto 🚀" > src/components/Header.jsx`
 
-4. Adicione as mudanças ao _stage_ do Git e faça um `commit`
+5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
   * Verifique que as mudanças ainda não estão no _stage_
     * Exemplo: `git status` (deve aparecer listada a pasta _components_ em vermelho)
   * Adicione o novo arquivo ao _stage_ do Git
@@ -203,10 +211,10 @@ O componente `App` deve renderizar um componente `MovieList`, passando como prop
         * `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
         * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
 
-5. Adicione a sua branch com o novo `commit` ao repositório remoto
+6. Adicione a sua branch com o novo `commit` ao repositório remoto
   * Usando o exemplo anterior: `git push -u origin joaozinho-movie-cards-library`
 
-6. Crie um novo `Pull Request` _(PR)_
+7. Crie um novo `Pull Request` _(PR)_
   * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-01-week10-movie-cards-library/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
