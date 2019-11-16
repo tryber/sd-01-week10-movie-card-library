@@ -37,9 +37,9 @@ Para executar os testes localmente, digite no terminal o comando `npm test`. Ini
 
 A primeira parte da saída mostra um sumário de cada teste e seu status. Um ❌ representa um teste falhando, enquanto um ✅ representa um teste correto. Naturalmente, no início todos os testes estarão falhando.
 
-Abaixo do sumário, para cada teste falhando, há uma mensagem explicativa sobre o motivo que causou a falha do teste, assim como a linha em que a falha ocorreu. Na imagem, vamos que o teste falha porque o componente `Header`, utilizando na linha 38, não está definido.
+Abaixo do sumário, para cada teste falhando, há uma mensagem explicativa sobre o motivo que causou a falha do teste, assim como a linha em que a falha ocorreu. Na imagem, vemos que o teste falha porque o componente `Header`, utilizando na linha 38, não está definido.
 
-Se fizemos uma implementação simples do componente `Header`, que não renderiza nada:
+Se fizermos uma implementação simples do componente `Header`, que não renderiza nada:
 
 ```jsx
 import React from 'react';
@@ -92,7 +92,7 @@ Uma estratégia é pular todos os testes no início e ir implementando um teste 
 
 #### Dica: watch mode
 
-Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramente que executa os testes, entra em _watch mode_. Nesse modo, a cada vez um arquivo é salvo, os testes são executados novamente. Isso pode aumentar sua produtividade removendo a necessidade de executar os testes manualmente o tempo todo. Você pode abrir uma aba no seu terminal ou no terminal do _VSCode_ e deixar o _Jest_ rodando nesse modo.
+Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que executa os testes, entra em _watch mode_. Nesse modo, a cada vez um arquivo é salvo, os testes são executados novamente. Isso pode aumentar sua produtividade removendo a necessidade de executar os testes manualmente o tempo todo. Você pode abrir uma aba no seu terminal ou no terminal do _VSCode_ e deixar o _Jest_ rodando nesse modo.
 
 ## Requisitos do projeto
 
@@ -120,7 +120,7 @@ Este componente representará toda a área com os cartões de filmes. `MoveList`
 
 #### 6 Crie um componente chamado MovieCard
 
-Esse componente representa um cartão de filme. `MovieCard` deve receber uma prop `movies`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
+Esse componente representa um cartão de filme. `MovieCard` deve receber uma prop `movie`. Essa prop será um objeto, contendo as propriedades, `title`, `subtitle`, `storyline`, `imagePath` e `rating`.
 
 #### 7 Renderize a imagem do filme
 
@@ -144,7 +144,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
 #### 12 Passe como prop para o componente `Rating` o atributo `rating`
 
-`MovieList` deve passar para o componente `Rating` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
+`MovieCard` deve passar para o componente `Rating` uma prop chamada `rating`. O valor dessa prop é a propriedade `rating` do objeto recebido na prop `movie`.
 
 #### 13 Crie um componente chamado `Rating`
 
