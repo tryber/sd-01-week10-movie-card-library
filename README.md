@@ -16,7 +16,7 @@ Você precisará implementar um conjunto de componentes em React que irão compo
 
 Este repositório já contem um _template_ com um App React criado e configurado. Após clonar o projeto e instalar as dependências (mais sobre isso abaixo), você não precisará realizar nenhuma configuração adicional. Você deverá completar este _template_ implementando os requisitos listados na próxima seção.
 
-Será necessário criar quatro componentes:
+Será necessário criar quatro `React Components`:
 
    - Header
    - MovieList
