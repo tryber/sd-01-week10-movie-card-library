@@ -27,7 +27,7 @@ Cada componente representa uma parte específica do site, conforme ilustrado aba
 
 ![image](site-outline.png)
 
-Todos os componentes devem ser criados dentro da pasta `src/components`. **É imporante que seus componentes tenham exatamente os nomes listados acima**.
+Todos os componentes devem ser criados dentro da pasta `src/components`. **É importante que seus componentes tenham exatamente os nomes listados acima**.
 
 Todos os requisitos do projeto serão testados automaticamente. Os testes para cada requisitos estão no arquivo `src/App.test.js`. Gaste um tempo lendo-o para entender como os testes estão organizados.
 
@@ -37,7 +37,7 @@ Para executar os testes localmente, digite no terminal o comando `npm test`. Ini
 
 A primeira parte da saída mostra um sumário de cada teste e seu status. Um ❌ representa um teste falhando, enquanto um ✅ representa um teste correto. Naturalmente, no início todos os testes estarão falhando.
 
-Abaixo do sumário, para cada teste falhando, há uma mensagem explicativa sobre o motivo que causou a falha do teste, assim como a linha em que a falha ocorreu. Na imagem, vemos que o teste falha porque o componente `Header`, utilizando na linha 38, não está definido.
+Abaixo do sumário, para cada teste falhando, há uma mensagem explicativa sobre o motivo que causou a falha do teste, assim como a linha em que a falha ocorreu. Na imagem, vemos que o teste falha porque o componente `Header`, utilizado na linha 38, não está definido.
 
 Se fizermos uma implementação simples do componente `Header`, que não renderiza nada:
 
@@ -72,7 +72,7 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 #### Dica: desativanto testes
 
-Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Comno o nome indica, esta função "pula" um teste:
+Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
 
 ```js
 it.skip('it includes the text `Movie Cards Library` inside a h1 tag', () => {
@@ -88,11 +88,11 @@ Na saída da execução dos testes, você verá um <img src="orange-circle.png" 
 
 Uma estratégia é pular todos os testes no início e ir implementando um teste de cada vez, removendo dele a função `skip`.
 
-⚠️ Lembre-se não entregar o projeto com nenhum teste ignorado. Testes ignoradados serão tratados como testes falhando.
+⚠️ Lembre-se de não entregar o projeto com nenhum teste ignorado. Testes ignoradados serão tratados como testes falhando.
 
 #### Dica: watch mode
 
-Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que executa os testes, entra em _watch mode_. Nesse modo, a cada vez um arquivo é salvo, os testes são executados novamente. Isso pode aumentar sua produtividade removendo a necessidade de executar os testes manualmente o tempo todo. Você pode abrir uma aba no seu terminal ou no terminal do _VSCode_ e deixar o _Jest_ rodando nesse modo.
+Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que executa os testes, entra em _watch mode_. Nesse modo, a cada vez que um arquivo é salvo, os testes são executados novamente. Isso pode aumentar sua produtividade removendo a necessidade de executar os testes manualmente o tempo todo. Você pode abrir uma aba no seu terminal ou no terminal do _VSCode_ e deixar o _Jest_ rodando nesse modo.
 
 ## Requisitos do projeto
 
@@ -100,15 +100,15 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
 #### 1 Crie um componente chamado `Header`
 
-Esse componente representará o o cabeçalho da página.
+Esse componente representará o cabeçalho da página.
 
 #### 2 Renderize o texto "Movie Cards Library" dentro de `Header`
 
-O texto deverá estar dentro de uma tag `h1`, que por usa vez deve estar dentro de uma tag `header`.
+O texto deverá estar dentro de uma tag `h1`, que por sua vez deve estar dentro de uma tag `header`.
 
 #### 3 Crie um componente chamado `MovieList`
 
-Este componente representará toda a área com os cartões de filmes. `MoveList` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
+Este componente representará toda a área com os cartões de filmes. `MovieList` deve receber uma prop `movies`, que é um array de objetos com informações de um filme.
 
 #### 4 Renderize componentes `MovieCard` dentro de `MovieList`
 
@@ -138,7 +138,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
 `MovieCard` deve renderizar a sinopse do filme dentro de uma tag `p`. A sinopse está contida na propriedade `storyline` do objeto recebido como prop.
 
-#### 11 Renderize um componnete `Rating` dentro de `MovieCard`
+#### 11 Renderize um componente `Rating` dentro de `MovieCard`
 
 `MovieCard` deve renderizar um componente `Rating`.
 
@@ -152,7 +152,7 @@ Esse componene representa a avaliação de um filme.
 
 #### 14 Renderize a nota de um filme dentro de `Rating`
 
-`Rating` deve renderizar a nota do filme recebido na prop `rating` dentor de um elemento com a classe `rating`.
+`Rating` deve renderizar a nota do filme recebido na prop `rating` dentro de um elemento com a classe `rating`.
 
 #### 15 `App` deve renderizar `Header`
 
@@ -173,7 +173,7 @@ O componente `App` deve renderizar um componente `MovieList`, passando como prop
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-01-week10-movie-cards-library`
 
-2. Instale as dependências, incialize o projeto e rode os tetes
+2. Instale as dependências, inicialize o projeto e rode os testes
   * Instale as dependências:
     * `npm install`
   * Inicialize o projeto:
