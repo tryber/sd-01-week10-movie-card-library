@@ -138,7 +138,7 @@ Esse componente representa um cartão de filme. `MovieCard` deve receber uma pro
 
 `MovieCard` deve renderizar a sinopse do filme dentro de uma tag `p`. A sinopse está contida na propriedade `storyline` do objeto recebido como prop.
 
-#### 11 Renderize um componnete `Rating`
+#### 11 Renderize um componnete `Rating` dentro de `MovieCard`
 
 `MovieCard` deve renderizar um componente `Rating`.
 
