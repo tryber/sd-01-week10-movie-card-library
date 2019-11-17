@@ -169,9 +169,9 @@ O componente `App` deve renderizar um componente `MovieList`, passando como prop
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
 1. Clone o repositório
-  * `git clone git@github.com:tryber/sd-01-week10-movie-cards-library.git`.
+  * `git clone git@github.com:tryber/sd-01-week10-movie-card-library.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-01-week10-movie-cards-library`
+    * `cd sd-01-week10-movie-card-library`
 
 2. Instale as dependências, inicialize o projeto e rode os testes
   * Instale as dependências:
@@ -188,11 +188,11 @@ O componente `App` deve renderizar um componente `MovieList`, passando como prop
     * Exemplo: `git checkout master`
   * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b joaozinho-movie-cards-library`
+    * Exemplo: `git checkout -b joaozinho-movie-card-library`
 
 4. Crie a pasta `components` dentro da pasta `src` e um arquivo `Header.jsx` dentro dessa pasta:
   * Verifique que você está na raiz do projeto
-    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-01-week10-movie-cards-library**_
+    * Exemplo: `pwd` -> o retorno vai ser algo tipo _/Users/joaozinho/code/**sd-01-week10-movie-card-library**_
   * Crie a pasta `components` e o arquivo `Header.jsx`
     * Exemplo:
       * `mkdir src/components`
