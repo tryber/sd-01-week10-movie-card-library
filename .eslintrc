@@ -40,7 +40,6 @@
     "semi": "error",
     "template-curly-spacing": "error",
     "yield-star-spacing": "error",
-    "react/prefer-stateless-function": ["error", { "ignorePureComponents": true }],
     "react/jsx-indent": "off",
     "react/jsx-one-expression-per-line": "off",
     "no-console": "off",
