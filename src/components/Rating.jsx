@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
 
-class rating extends React.Component {
-    render() {
-        return this.props.rating;
-    }
+class Rating extends React.Component {
+  render() {
+    const rating = this.props.rating;
+    return <div className="rating">{rating}</div>;
+  }
 }
 
-export default rating;
+export default Rating;
