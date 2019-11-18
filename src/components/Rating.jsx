@@ -4,12 +4,11 @@ class Rating extends React.Component {
     render() {
         const rating = this.props.rating
         return (
-            <div>
+            <div className='movie-card-rating'>
                 <p className="rating">{rating}</p>
             </div>
-            )
-        }
+        )
     }
-    
-    export default Rating;
-    
+}
+
+export default Rating;
