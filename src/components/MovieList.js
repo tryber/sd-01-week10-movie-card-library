@@ -7,7 +7,7 @@ export default class MovieList extends Component {
     return (
       <section className="movie-list">
         {movies.map((element) => <MovieCard key={element.title} movie={element} />
-        )}
+        )};
       </section>
     );
   }
