@@ -1,13 +1,13 @@
-// Iniciando o projeto 🚀
 import React from 'react';
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    const arrMovies = this.props.movies;
+    const { movies } = this.props;
+    movies.map((movie) => console.log(movie.title));
     return (
-      <div className="MovieList">
-        {arrMovies.map((movie) => <MovieCard key={movie.name} movie={movie} />)}
+      <div className="movie-list">
+        {movies.map((movie) => <MovieCard key={movie.title} movie={movie} />)}
       </div>
     );
   }
