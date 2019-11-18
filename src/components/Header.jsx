@@ -3,10 +3,10 @@ import React from 'react';
 class Header extends React.Component {
   render() {
     return (
-      <header class="movie-card-header">
+      <header className="movie-card-header">
         <h1>Movie Cards Library</h1>
       </header>
-    )
+    );
   }
 }
 
