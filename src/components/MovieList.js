@@ -6,8 +6,7 @@ export default class MovieList extends Component {
     const { movies } = this.props;
     return (
       <section className="movie-list">
-        {movies.map((element) => 
-        <MovieCard key={element.title} movie={element} />
+        {movies.map((element) => <MovieCard key={element.title} movie={element} />
         )}
       </section>
     );
