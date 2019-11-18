@@ -7,7 +7,7 @@ render() {
     const { movies } = this.props;
     return (
         <div>
-            {movies.map(movies => <MovieCard key={movies.title} movies={movies}/>)}
+            {movies.map(movie => <MovieCard key={movie.title} movie={movie}/>)}
         </div>
         )
     }
