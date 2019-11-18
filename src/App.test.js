@@ -3,9 +3,9 @@ import { mount, shallow } from 'enzyme';
 
 import App from './App';
 import Header from './components/Header';
-// import MovieCard from './components/MovieCard';
-// import MovieList from './components/MovieList';
-// import Rating from './components/Rating';
+import MovieCard from './components/MovieCard';
+import MovieList from './components/MovieList';
+import Rating from './components/Rating';
 
 let wrapper;
 
@@ -15,22 +15,22 @@ const movies = [
     subtitle: 'Movie Subtitle 1',
     storyline: 'Movie Storyline 1',
     rating: 4.5,
-    imagePath: 'images/movie_1',
+    imagePath: 'images/movie_1'
   },
   {
     title: 'Movie Title 2',
     subtitle: 'Movie Subtitle 2',
     storyline: 'Movie Storyline 2',
     rating: 4.5,
-    imagePath: 'images/movie_2',
+    imagePath: 'images/movie_2'
   },
   {
     title: 'Movie Title 3',
     subtitle: 'Movie Subtitle 3',
     storyline: 'Movie Storyline 3',
     rating: 3,
-    imagePath: 'images/movie_3',
-  },
+    imagePath: 'images/movie_3'
+  }
 ];
 
 describe('<Header /> component', () => {
@@ -90,7 +90,6 @@ describe('<MovieCard /> component', () => {
 
     expect(wrapper.find('h5').text()).toBe('Movie Subtitle 1');
   });
-
 
   it('renders the movie storyline inside a `p` tag', () => {
     wrapper = shallow(<MovieCard movie={movie} />);

@@ -1,13 +1,20 @@
 import React from 'react';
-import Dados from '../data';
 import MovieCard from './MovieCard';
 
-function interarFilme(lista) {
-  return lista.map(select => <MovieCard dados={select} />);
-}
-
-function MovieList() {
-  return <div>{interarFilme(Dados)}</div>;
+class MovieList extends React.Component {
+  render() {
+    const { movies } = this.props;
+    function listFilm() {
+      return (
+        <div className="movie-list">
+          {movies.map((select) => (
+            <MovieCard movie={select} />
+          ))}
+        </div>
+      );
+    }
+    return listFilm();
+  }
 }
 
 export default MovieList;
