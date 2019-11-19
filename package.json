@@ -7,7 +7,6 @@
     "eslint-config-eslint": "^5.0.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-react": "^7.16.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
@@ -39,6 +38,7 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-node": "^10.0.0",
     "jest": "^24.9.0",
     "prettier": "^1.19.1"
   }
