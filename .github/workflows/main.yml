@@ -13,4 +13,4 @@ jobs:
         uses: betrybe/store-evaluation-action@master
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
-          environment: staging
+          environment: production
