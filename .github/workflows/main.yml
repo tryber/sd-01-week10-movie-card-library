@@ -10,6 +10,7 @@ jobs:
         id: react-scripts
         uses: betrybe/react-scripts-evaluator-action@add-test-dependencies
       - name: Store evaluation step
+        id: store-evaluation
         uses: betrybe/store-evaluation-action@master
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
