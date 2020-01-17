@@ -5,13 +5,13 @@ on:
 jobs:
   evaluator_job:
     runs-on: ubuntu-latest
-    name: Evaluator job
+    name: Evaluator job.
     steps:
       - uses: actions/checkout@v2
-      - name: React Scripts evaluator step
+      - name: React Scripts evaluator step.
         id: react-scripts
         uses: betrybe/react-scripts-evaluator-action@feature/feedback-pr-reference
-      - name: Store evaluation step
+      - name: Store evaluation step.
         uses: betrybe/store-evaluation-action@feature/add-pr-number
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
