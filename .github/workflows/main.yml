@@ -11,7 +11,7 @@ jobs:
       - name: React Scripts evaluator step
         id: react-scripts
         uses: betrybe/react-scripts-evaluator-action@feature/feedback-pr-reference
-      - name: Store evaluation step.
+      - name: Store evaluation step
         uses: betrybe/store-evaluation-action@feature/add-pr-number
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
