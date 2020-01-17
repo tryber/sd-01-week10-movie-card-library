@@ -8,7 +8,7 @@ jobs:
     name: Evaluator job
     steps:
       - uses: actions/checkout@v2
-      - name: React Scripts evaluator step.
+      - name: React Scripts evaluator step
         id: react-scripts
         uses: betrybe/react-scripts-evaluator-action@feature/feedback-pr-reference
       - name: Store evaluation step.
