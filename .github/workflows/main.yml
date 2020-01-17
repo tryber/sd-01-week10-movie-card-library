@@ -14,3 +14,4 @@ jobs:
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
           environment: production
+          pr-number: ${{ steps.react-scripts.output.pr-number }}
