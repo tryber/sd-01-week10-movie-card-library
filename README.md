@@ -252,7 +252,7 @@ Para **"entregar"** seu projeto, siga os passos a seguir:
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
   * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students`
 
-Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
+Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205)
 
 ---
 
