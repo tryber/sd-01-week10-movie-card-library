@@ -1,4 +1,6 @@
-on: [push]
+on:
+  pull_request:
+    types: [opened, synchronize]
 
 jobs:
   evaluator_job:
@@ -8,10 +10,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: React Scripts evaluator step
         id: react-scripts
-        uses: betrybe/react-scripts-evaluator-action@master
+        uses: betrybe/react-scripts-evaluator-action@feature/feedback-pr-reference
       - name: Store evaluation step
-        uses: betrybe/store-evaluation-action@master
+        uses: betrybe/store-evaluation-action@feature/add-pr-number
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
-          environment: production
+          environment: staging
           pr-number: ${{ steps.react-scripts.output.pr-number }}
