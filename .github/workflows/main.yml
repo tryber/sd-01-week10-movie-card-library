@@ -1,0 +1,19 @@
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  evaluator_job:
+    runs-on: ubuntu-latest
+    name: Evaluator job
+    steps:
+      - uses: actions/checkout@v2
+      - name: React Scripts evaluator step
+        id: react-scripts
+        uses: betrybe/react-scripts-evaluator-action@master
+      - name: Store evaluation step
+        uses: betrybe/store-evaluation-action@master
+        with:
+          evaluation-data: ${{ steps.react-scripts.outputs.result }}
+          environment: production
+          pr-number: ${{ steps.react-scripts.outputs.pr-number }}
