@@ -15,5 +15,5 @@ jobs:
         uses: betrybe/store-evaluation-action@feature/add-pr-number
         with:
           evaluation-data: ${{ steps.react-scripts.outputs.result }}
-          environment: production
+          environment: staging
           pr-number: ${{ steps.react-scripts.output.pr-number }}
